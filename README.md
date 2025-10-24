@@ -1,7 +1,7 @@
 Nufal Sultan - Personal Portfolio Website
 This repository contains the source code for my personal portfolio website, designed to showcase my skills, projects, and experience as a Computer Science student. The website is built with clean, semantic HTML and styled with modern CSS.
 
-Live Site URL: [https://your-username.github.io/](https://n0fill.github.io)
+Live Site URL: https://n0fill.github.io
 
 Project Overview
 The purpose of this website is to serve as a central hub for my professional presence. It provides an overview of my background, highlights my key technical projects, and details my skills and work experience. It is designed to be a clean, responsive, and easily navigable site for potential employers and collaborators.

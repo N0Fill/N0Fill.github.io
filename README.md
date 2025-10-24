@@ -38,6 +38,6 @@ This website is hosted for free using GitHub Pages. The deployment process is au
 Contact
 Email: nofilsultan1@gmail.com
 
-GitHub: [github.com/your-username](https://github.com/N0Fill)
+GitHub: https://github.com/N0Fill
 
 LinkedIn: linkedin.com/in/nufal-sultan-a68506259/

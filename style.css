@@ -1,83 +1,131 @@
-/* General Body Styles */
-body {
-    font-family: 'Lato', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background: #f4f4f4;
-    color: #333;
+/* CSS Variables for Theming */
+:root {
+    --bg-color: #121212;
+    --primary-text-color: #e0e0e0;
+    --secondary-text-color: #a0a0a0;
+    --accent-color: #00aaff;
+    --card-bg-color: #1e1e1e;
+    --card-border-color: #333;
+    --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Source Code Pro', monospace;
 }
 
-.container { 
-    width: 80%; 
-    margin: auto; 
-    overflow: hidden; 
-    padding: 0 20px; 
+/* General Body Styles */
+body {
+    font-family: var(--font-body);
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    background: var(--bg-color);
+    color: var(--primary-text-color);
+}
+
+.container {
+    width: 85%;
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
 }
 
 /* Header */
 header {
-    background: #333;
+    background: var(--bg-color);
     color: #fff;
-    padding: 2rem 0;
+    padding: 3rem 0;
     text-align: center;
-    border-bottom: #0779e4 3px solid;
+    border-bottom: 1px solid var(--card-border-color);
 }
 
 header h1 {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
-    font-size: 2.5rem;
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--accent-color);
 }
 
-/* Sections */
+header p {
+    font-size: 1.1rem;
+    color: var(--secondary-text-color);
+}
+
+/* General Section Styling */
 section {
-    padding: 20px 0;
-    border-bottom: 1px solid #ddd;
+    padding: 40px 0;
 }
 
 section h2 {
     text-align: center;
-    margin-bottom: 20px;
-    font-family: 'Roboto', sans-serif;
-    color: #0779e4;
+    margin-bottom: 30px;
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+    display: inline-block;
+    padding-bottom: 10px;
+    width: 100%;
 }
 
 /* Card Styles for Projects and Experience */
-.card { 
-    background: #fff; 
-    padding: 20px; 
-    margin-bottom: 20px; 
-    border-radius: 5px; 
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+.card {
+    background: var(--card-bg-color);
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--card-border-color);
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card h3 { 
-    margin-top: 0; 
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 170, 255, 0.15);
 }
 
-.card.date { 
-    float: right; 
-    color: #666; 
-    font-style: italic; 
+.card h3 {
+    margin-top: 0;
+    font-family: var(--font-heading);
+    color: var(--primary-text-color);
+    font-size: 1.4rem;
 }
 
-.card p:last-child { 
-    margin-bottom: 0; 
+.card.date {
+    float: right;
+    color: var(--secondary-text-color);
+    font-style: italic;
+    font-size: 0.9rem;
 }
 
-.project-grid { 
-    display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-    gap: 20px; 
+.card p {
+    color: var(--secondary-text-color);
+}
+
+.card.tech-stack {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: var(--accent-color);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
 }
 
 /* Skills Section */
-.skills-grid { 
-    display: grid; 
-    grid-template-columns: 
-    1fr 1fr; gap: 
-    40px; 
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    text-align: center;
+}
+
+.skill-category h3 {
+    font-family: var(--font-heading);
+    color: var(--primary-text-color);
+    margin-bottom: 15px;
 }
 
 #skills ul {
@@ -86,21 +134,42 @@ section h2 {
 }
 
 #skills li {
-    background: #e2e2e2;
-    padding: 10px;
+    background: var(--card-bg-color);
+    border: 1px solid var(--card-border-color);
+    padding: 12px;
     margin-bottom: 10px;
     border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#skills li:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
 }
 
 /* Footer */
 footer {
-    background: #333;
+    background: var(--card-bg-color);
     color: #fff;
     text-align: center;
-    padding: 2rem 0;
+    padding: 2.5rem 0;
+    margin-top: 30px;
+    border-top: 1px solid var(--card-border-color);
 }
 
 footer a {
-    color: #0779e4;
+    color: var(--accent-color);
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer.social-links {
+    font-size: 1.1rem;
+    margin-top: 10px;
 }

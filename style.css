@@ -1,0 +1,106 @@
+/* General Body Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+.container { 
+    width: 80%; 
+    margin: auto; 
+    overflow: hidden; 
+    padding: 0 20px; 
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    border-bottom: #0779e4 3px solid;
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+}
+
+/* Sections */
+section {
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #0779e4;
+}
+
+/* Card Styles for Projects and Experience */
+.card { 
+    background: #fff; 
+    padding: 20px; 
+    margin-bottom: 20px; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+.card h3 { 
+    margin-top: 0; 
+}
+
+.card.date { 
+    float: right; 
+    color: #666; 
+    font-style: italic; 
+}
+
+.card p:last-child { 
+    margin-bottom: 0; 
+}
+
+.project-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px; 
+}
+
+/* Skills Section */
+.skills-grid { 
+    display: grid; 
+    grid-template-columns: 
+    1fr 1fr; gap: 
+    40px; 
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills li {
+    background: #e2e2e2;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+footer a {
+    color: #0779e4;
+    text-decoration: none;
+}

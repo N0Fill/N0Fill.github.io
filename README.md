@@ -37,7 +37,7 @@ Setup and Deployment
 This website is hosted for free using GitHub Pages. The deployment process is automated: any push to the main branch of this repository will trigger a new deployment, making the updated site live within minutes.
 
 Contact
-Email: nofilsultan1@gmail.com
+Email: n.sultan.work@gmail.com
 
 GitHub: https://github.com/N0Fill
 
